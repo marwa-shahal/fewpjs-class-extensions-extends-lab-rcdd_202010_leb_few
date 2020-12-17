@@ -16,11 +16,13 @@ class Polygon{
 
 class Triangle extends Polygon{
   get isValid(){
+    let valid=false;
     if (this.arrofsides.length===3){
     if(this.arrofsides[0]+this.arrofsides[1]>this.arrofsides[2] && this.arrofsides[1]+this.arrofsides[2]>this.arrofsides[0] ){
-      return true;
+      return valid=true;
     }
     }
+    return valid
     }
     
   }
