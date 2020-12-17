@@ -21,8 +21,9 @@ class Triangle extends Polygon{
     if(this.arrofsides[0]+this.arrofsides[1]>this.arrofsides[2] && this.arrofsides[1]+this.arrofsides[2]>this.arrofsides[0] ){
       return valid=true;
     }
+    return valid;
     }
-    return valid
+    
     }
     
   }
