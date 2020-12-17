@@ -16,8 +16,12 @@ class Polygon{
 
 class Triangle extends Polygon{
   get isValid(){
-    if (this.arrofsides.length===3)
-    return (this.arrofsides[0]+this.arrofsides[1]>this.arrofsides[2] && this.arrofsides[1]+this.arrofsides[2]>this.arrofsides[0] );
+    let valid=false;
+    if (this.arrofsides.length===3){
+    if(this.arrofsides[0]+this.arrofsides[1]>this.arrofsides[2] && this.arrofsides[1]+this.arrofsides[2]>this.arrofsides[0] ){
+      return valid=true  }
+    }
+    return valid
     }
     
   }
@@ -25,8 +29,13 @@ class Triangle extends Polygon{
 
 class Square extends Polygon{
   get isValid(){
-  if(this.arrofsides.length===4)
-  return (this.arrofsides[0]===this.arrofsides[1] && this.arrofsides[0]===this.arrofsides[2] && this.arrofsides[0]===this.arrofsides[3]);
+  let validation=false;
+  if(this.arrofsides.length===4){
+  if (this.arrofsides[0]===this.arrofsides[1] && this.arrofsides[0]===this.arrofsides[2] && this.arrofsides[0]===this.arrofsides[3]){
+    return validation=true;
+  }
+  return validation;
+  }
   }
   get area(){
     if (this.arrofsides.length===4){
